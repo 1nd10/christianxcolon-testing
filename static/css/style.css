@@ -497,4 +497,8 @@ h2 {
         line-height: 1.2em;
         margin-bottom: 0.5em;
     }
+
+    .page-title {
+        font-size: 1.5rem;
+    }
 }
