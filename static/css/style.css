@@ -117,16 +117,16 @@ h2 {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 .has-drop-cap::first-letter,
 .has-middle-cap::first-letter {
-    font-size: 2.4em;
+    font-size: 5rem;
     color: var(--bulma-primary);
     float: left;
     line-height: 1;
@@ -209,21 +209,20 @@ h2 {
 }
 
 .hero.is-note {
-  height: 50vh;
-  padding: 0;
+    height: 50vh;
+    padding: 0;
 }
 
 .hero.is-note .is-note-picture,
 .hero.is-note .is-note-picture img {
-  height: 100%;
-  width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 .hero.is-note .is-note-picture img {
-  object-fit: cover;
-  display: block;
+    object-fit: cover;
+    display: block;
 }
-
 
 /*
 * BOOK 3D
@@ -485,13 +484,27 @@ h2 {
     }
 }
 
+/*
+* DEVICE: desktop
+*/
 @media screen and (min-width: 1024px) {
+    .mt-6-desktop {
+        margin-top: 3rem !important;
+    }
+
+    .mb-6-desktop {
+        margin-bottom: 3rem !important;
+    }
+
     .navbar-start.is-centered-desktop {
         flex-grow: 1;
         justify-content: center;
     }
 }
 
+/*
+* DEVICE: mobile
+*/
 @media screen and (max-width: 768px) {
     h1.has-drop-cap {
         line-height: 1.2em;
@@ -500,5 +513,47 @@ h2 {
 
     .page-title {
         font-size: 1.5rem;
+    }
+
+    h1,
+    h2.title,
+    h2.title.is-3,
+    footer .content h1 {
+        font-size: 1.5rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .has-drop-cap,
+    .has-middle-cap {
+        display: inline-block;
+        font-size: 1.7rem;
+    }
+
+    .has-drop-cap::first-letter,
+    .has-middle-cap::first-letter {
+        font-size: 4.5rem;
+    }
+
+    .has-middle-cap::first-letter {
+        margin-top: 0;
+    }
+
+    .has-middle-cap {
+        margin-bottom: 0;
+    }
+
+    p.title.is-4 {
+        font-size: 1.1rem;
+    }
+
+    p.subtitle.is-6 {
+        font-size: 0.90rem;
     }
 }
