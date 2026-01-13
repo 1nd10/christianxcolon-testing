@@ -224,6 +224,160 @@ h2 {
     display: block;
 }
 
+summary.is-long-bio {
+    align-items: center;
+    appearance: none;
+    border-color: transparent;
+    border-style: solid;
+    border-width: var(--bulma-control-border-width);
+    border-radius: var(--bulma-control-radius);
+    box-shadow: none;
+    display: list-item;
+    list-style: disclosure-closed;
+    list-style-position: inside;
+    width: 100%;
+    font-size: var(--bulma-control-size);
+    height: var(--bulma-control-height);
+    justify-content: flex-start;
+    line-height: var(--bulma-control-line-height);
+    padding-bottom: var(--bulma-control-padding-vertical);
+    padding-left: var(--bulma-control-padding-horizontal);
+    padding-right: var(--bulma-control-padding-horizontal);
+    padding-top: var(--bulma-control-padding-vertical);
+    position: relative;
+    transition-duration: var(--bulma-duration);
+    transition-property: background-color, border-color, box-shadow, color;
+    vertical-align: top;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    --bulma-button-family: false;
+    --bulma-button-weight: var(--bulma-weight-medium);
+    --bulma-button-border-color: var(--bulma-border);
+    --bulma-button-border-style: solid;
+    --bulma-button-border-width: var(--bulma-control-border-width);
+    --bulma-button-padding-vertical: 0.5em;
+    --bulma-button-padding-horizontal: 1em;
+    --bulma-button-focus-border-color: var(--bulma-link-focus-border);
+    --bulma-button-focus-box-shadow-size: 0 0 0 0.125em;
+    --bulma-button-focus-box-shadow-color: hsla(
+        var(--bulma-link-h),
+        var(--bulma-link-s),
+        var(--bulma-link-on-scheme-l),
+        0.25
+    );
+    --bulma-button-active-color: var(--bulma-link-active);
+    --bulma-button-active-border-color: var(--bulma-link-active-border);
+    --bulma-button-text-color: var(--bulma-text);
+    --bulma-button-text-decoration: underline;
+    --bulma-button-text-hover-background-color: var(--bulma-background);
+    --bulma-button-text-hover-color: var(--bulma-text-strong);
+    --bulma-button-ghost-background: none;
+    --bulma-button-ghost-border-color: transparent;
+    --bulma-button-ghost-color: var(--bulma-link-text);
+    --bulma-button-ghost-decoration: none;
+    --bulma-button-ghost-hover-color: var(--bulma-link);
+    --bulma-button-ghost-hover-decoration: underline;
+    --bulma-button-disabled-background-color: var(--bulma-scheme-main);
+    --bulma-button-disabled-border-color: var(--bulma-border);
+    --bulma-button-disabled-shadow: none;
+    --bulma-button-disabled-opacity: 0.5;
+    --bulma-button-static-color: var(--bulma-text-weak);
+    --bulma-button-static-background-color: var(--bulma-scheme-main-ter);
+    --bulma-button-static-border-color: var(--bulma-border);
+
+    --bulma-button-h: var(--bulma-scheme-h);
+    --bulma-button-s: var(--bulma-scheme-s);
+    --bulma-button-l: var(--bulma-scheme-main-l);
+    --bulma-button-background-l: var(--bulma-scheme-main-l);
+    --bulma-button-background-l-delta: 0%;
+    --bulma-button-hover-background-l-delta: var(--bulma-hover-background-l-delta);
+    --bulma-button-active-background-l-delta: var(--bulma-active-background-l-delta);
+    --bulma-button-color-l: var(--bulma-text-strong-l);
+    --bulma-button-border-l: var(--bulma-border-l);
+    --bulma-button-border-l-delta: 0%;
+    --bulma-button-hover-border-l-delta: var(--bulma-hover-border-l-delta);
+    --bulma-button-active-border-l-delta: var(--bulma-active-border-l-delta);
+    --bulma-button-focus-border-l-delta: var(--bulma-focus-border-l-delta);
+    --bulma-button-outer-shadow-h: 0;
+    --bulma-button-outer-shadow-s: 0%;
+    --bulma-button-outer-shadow-l: 20%;
+    --bulma-button-outer-shadow-a: 0.05;
+    --bulma-loading-color: hsl(var(--bulma-button-h), var(--bulma-button-s), var(--bulma-button-color-l));
+    background-color: hsl(
+        var(--bulma-button-h),
+        var(--bulma-button-s),
+        calc(var(--bulma-button-background-l) + var(--bulma-button-background-l-delta))
+    );
+    border-color: hsl(
+        var(--bulma-button-h),
+        var(--bulma-button-s),
+        calc(var(--bulma-button-border-l) + var(--bulma-button-border-l-delta))
+    );
+    border-style: var(--bulma-button-border-style);
+    border-width: var(--bulma-button-border-width);
+    box-shadow:
+        0px 0.0625em 0.125em
+            hsla(
+                var(--bulma-button-outer-shadow-h),
+                var(--bulma-button-outer-shadow-s),
+                var(--bulma-button-outer-shadow-l),
+                var(--bulma-button-outer-shadow-a)
+            ),
+        0px 0.125em 0.25em
+            hsla(
+                var(--bulma-button-outer-shadow-h),
+                var(--bulma-button-outer-shadow-s),
+                var(--bulma-button-outer-shadow-l),
+                var(--bulma-button-outer-shadow-a)
+            );
+    color: hsl(var(--bulma-button-h), var(--bulma-button-s), var(--bulma-button-color-l));
+    cursor: pointer;
+    font-weight: var(--bulma-button-weight);
+    height: auto;
+    justify-content: center;
+    padding-bottom: calc(var(--bulma-button-padding-vertical) - var(--bulma-button-border-width));
+    padding-left: calc(var(--bulma-button-padding-horizontal) - var(--bulma-button-border-width));
+    padding-right: calc(var(--bulma-button-padding-horizontal) - var(--bulma-button-border-width));
+    padding-top: calc(var(--bulma-button-padding-vertical) - var(--bulma-button-border-width));
+    text-align: center;
+    white-space: nowrap;
+}
+
+details[open] summary.is-long-bio {
+    list-style: disclosure-open;
+    list-style-position: inside;
+}
+
+summary.is-long-bio:focus,
+summary.is-long-bio:focus-within,
+summary.is-long-bio:focus-visible,
+summary.is-long-bio:active {
+    outline: none;
+}
+
+summary.is-long-bio:hover {
+    --bulma-button-background-l-delta: var(--bulma-button-hover-background-l-delta);
+    --bulma-button-border-l-delta: var(--bulma-button-hover-border-l-delta);
+}
+
+summary.is-long-bio:focus-visible {
+    --bulma-button-border-width: 1px;
+    border-color: hsl(var(--bulma-focus-h), var(--bulma-focus-s), var(--bulma-focus-l));
+    box-shadow: var(--bulma-focus-shadow-size)
+        hsla(var(--bulma-focus-h), var(--bulma-focus-s), var(--bulma-focus-l), var(--bulma-focus-shadow-alpha));
+}
+
+summary.is-long-bio:active {
+    --bulma-button-background-l-delta: var(--bulma-button-active-background-l-delta);
+    --bulma-button-border-l-delta: var(--bulma-button-active-border-l-delta);
+    --bulma-button-outer-shadow-a: 0;
+}
+
 /*
 * BOOK 3D
 */
@@ -554,6 +708,6 @@ h2 {
     }
 
     p.subtitle.is-6 {
-        font-size: 0.90rem;
+        font-size: 0.9rem;
     }
 }
