@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Christian X. Colón</title>
-    <meta name="description" content="Este sitio reúne libros, notas y apariciones públicas. Lo demás, en los textos." />
+    <meta name="description" content="${meta_description}" />
 
     <!-- Hojas de estilo-->
     <link rel="stylesheet" href="static/css/all.min.css" />
@@ -55,26 +55,21 @@
 
     <!-- Main content -->
     <main id="main">
-        <section class="hero p-6 has-text-light has-dark-pattern">
-    <div class="hero-body">
-        <div class="columns is-vcentered is-0-desktop is-6-mobile">
-            <div class="column">
-                <div class="book-3d wow animate__animated animate__slideInLeft">
-                    <div class="book-3d__inner">
-                        <img class="book-3d__cover"
-                            src="static/images/books/portada_musas_quimeras.png"
-                            alt="Entre musas y quimeras por Christian X. Colón">
-                    </div>
-                </div>
-            </div>
-            <div class="column is-three-fifths-desktop wow animate__animated animate__slideInRight">
-                <h1 class="has-drop-cap">Entre musas y quimeras</h1>
-                <p class="subtitle">Editorial Caligrama · 2026</p>
-                <p>Mi primer poemario, disponible ya en todas las tiendas.</p>
-                <button class="button is-link is-normal mt-4">Ver detalles</button>
-            </div>
-        </div>
+        <section class="hero is-large is-author-hero">
+  <!-- Background Image with overlay -->
+  <div class="hero-background-image">
+    <figure class="image">
+      <img src="static/images/author/hero-dark.png" alt="${picture_alt}">
+    </figure>
+  </div>
+
+  <!-- Hero Content -->
+  <div class="hero-body">
+    <div class="container has-text-light">
+        <h1 class="author-title has-drop-cap">Christian X. Colón</h1>
+        <p class="subtitle author-subtitle">Poeta · Novelista · Dramaturgo</p>
     </div>
+  </div>
 </section>
     </main>
 
