@@ -39,6 +39,7 @@
     --bulma-primary-h: 223deg;
     --bulma-primary-s: 53%;
     --bulma-primary-l: 53%;
+    --bulma-body-family: var(--body-font-family);
 }
 
 .page-title {
@@ -224,6 +225,81 @@ h2 {
     display: block;
 }
 
+.hero.is-note .is-note-picture.is-vertical-top img {
+    object-position: top;
+}
+
+.hero.is-note .is-note-picture.is-vertical-center img {
+    object-position: center;
+}
+
+.hero.is-note .is-note-picture.is-vertical-bottom img {
+    object-position: bottom;
+}
+
+.hero.is-note .is-note-picture.is-vertical-top-5 img {
+    object-position: 0% 5%;
+}
+
+.hero.is-note .is-note-picture.is-vertical-top-10 img {
+    object-position: 0% 10%;
+}
+
+.hero.is-note .is-note-picture.is-vertical-top-15 img {
+    object-position: 0% 15%;
+}
+
+.hero.is-note .is-note-picture.is-vertical-top-20 img {
+    object-position: 0% 20%;
+}
+
+.hero.is-note .is-note-picture.is-vertical-top-25 img {
+    object-position: 0% 25%;
+}
+
+.hero-background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.hero-background-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 80% 20%;
+}
+
+.author-title {
+    font-family: var(--headings-font-family-bold);
+    font-size: 3rem;
+}
+
+.author-subtitle {
+    font-family: var(--body-font-family);
+    --bulma-subtitle-color: var(--bulma-text-light);
+}
+
+.hero.is-author-hero {
+    --bulma-hero-body-padding-large: 0rem 0rem;
+    position: relative;
+    overflow: hidden;
+    padding-left: 15rem;
+    padding-top: 15rem;
+    min-height: 90vh;
+}
+
+.hero-background-image .image {
+  height: 100%;
+}
+
+.is-author-hero .has-drop-cap::first-letter {
+  font-size: 7rem;
+}
+
 summary.is-long-bio {
     align-items: center;
     appearance: none;
@@ -376,6 +452,28 @@ summary.is-long-bio:active {
     --bulma-button-background-l-delta: var(--bulma-button-active-background-l-delta);
     --bulma-button-border-l-delta: var(--bulma-button-active-border-l-delta);
     --bulma-button-outer-shadow-a: 0;
+}
+
+.content.is-note {
+    --bulma-content-heading-color: var(--bulma-text-dark);
+}
+
+.content.is-note blockquote {
+    --bulma-content-blockquote-background-color: var(--bulma-white-on-scheme);
+    font-style: italic;
+}
+
+.content.is-note blockquote.is-poem {
+    font-style: normal;
+}
+
+.content.is-note p.poem-title {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.content.is-note span.poem-verse {
+    display: block;
 }
 
 /*
