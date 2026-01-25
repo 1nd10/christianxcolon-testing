@@ -808,4 +808,8 @@ summary.is-long-bio:active {
     p.subtitle.is-6 {
         font-size: 0.9rem;
     }
+
+    summary.is-long-bio {
+        width: auto;
+    }
 }
