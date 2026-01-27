@@ -2,11 +2,19 @@
 <html lang='es'>
 
 <head>
+    <base href="/website/out/">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Christian X. Colón</title>
     <meta name="description" content="${meta_description}" />
-
+    <!-- Favicons -->
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="static/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/favicons/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="static/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="static/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="static/favicons/android-chrome-512x512.png">
+    <link rel="manifest" href="static/favicons/site.webmanifest">
     <!-- Hojas de estilo-->
     <link rel="stylesheet" href="static/css/all.min.css" />
     <link rel="stylesheet" href="static/css/brands.min.css" />
@@ -21,7 +29,7 @@
     <header>
         <nav class="navbar is-light p-3 is-unselectable" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-                <a class="navbar-item page-title" href="index.html">
+                <a class="navbar-item page-title" href="">
                     Christian X. Colón
                 </a>
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
@@ -33,7 +41,7 @@
             </div>
             <div class="navbar-menu" id="navMenu">
                 <div class="navbar-start is-centered-desktop has-text-right-touch">
-                    <a class="navbar-item is-size-5" href="about.html">Sobre el autor</a><a class="navbar-item is-size-5" href="books.html">Libros</a><a class="navbar-item is-size-5" href="notes.html">Cuaderno</a><a class="navbar-item is-size-5" href="events.html">Eventos</a><a class="navbar-item is-size-5" href="contact.html">Contacto</a>
+                    <a class="navbar-item is-size-5" href="about/">Sobre el autor</a><a class="navbar-item is-size-5" href="books/">Libros</a><a class="navbar-item is-size-5" href="notes/">Cuaderno</a><a class="navbar-item is-size-5" href="events/">Eventos</a><a class="navbar-item is-size-5" href="contact/">Contacto</a>
                 </div>
                 <div class="navbar-end is-hidden-touch">
                     <a class="navbar-item is-icon px-4" href="https://www.facebook.com/christianxcolon.writer"
@@ -76,6 +84,9 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="content has-text-centered">
+            <figure class="image is-128x128 mb-7" style="margin: auto;">
+                <img src="static/images/logo.svg" alt="Logo del autor.">
+            </figure>
             <h1>Christian X. Colón</h1>
             <p><i>No hay palabra inocente,<br />ni mundo ajeno a quien la dice.</i></p>
             <br />
