@@ -797,10 +797,6 @@ summary.is-long-bio:active {
         font-size: 4.5rem;
     }
 
-    .has-middle-cap::first-letter {
-        margin-top: 0;
-    }
-
     .has-middle-cap {
         margin-bottom: 0;
     }
